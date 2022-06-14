@@ -1,5 +1,5 @@
-interface Engined {
-    public default void checkEngine() {
+public interface Engined {
+     default void checkEngine() {
         System.out.println("проверяем двигатель");
     };
 }
