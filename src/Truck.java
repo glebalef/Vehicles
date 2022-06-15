@@ -1,6 +1,6 @@
 import java.sql.SQLOutput;
 
-public class Truck extends Vehicle {
+public class Truck extends Car {
 
     public Truck(String modelName, int wheelsCount) {
         super(modelName, wheelsCount);
@@ -16,7 +16,6 @@ public class Truck extends Vehicle {
     @Override
     public void check() {
         super.check();
-        this.checkEngine();
         this.checkTrailer();
 
     }

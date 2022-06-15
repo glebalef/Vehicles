@@ -26,7 +26,7 @@ abstract public class Vehicle implements Service {
     public void updateTyre() {
         System.out.println("Меняем колесо");
     }
-    public void check (Vehicle vehicle) {
+    public void check () {
             System.out.println("Обслуживаем " + this.getModelName());
             for (int i = 0; i < this.getWheelsCount(); i++) {
                 this.updateTyre();
