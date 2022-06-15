@@ -4,8 +4,8 @@ public class Bicycle extends Vehicle {
     }
 
  @Override
- public void check (Vehicle vehicle) {
-     super.check(this);
+ public void check () {
+     super.check();
      }
  }
 

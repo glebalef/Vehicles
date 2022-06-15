@@ -1,3 +1,3 @@
 public interface Service {
-    public void check (Vehicle vehicle);
+    public void check ();
 }

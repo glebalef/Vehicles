@@ -14,10 +14,11 @@ public class Truck extends Vehicle {
         System.out.println("Проверяем двигатель");
     }
     @Override
-    public void check(Vehicle vehicle) {
-        super.check(this);
+    public void check() {
+        super.check();
         this.checkEngine();
         this.checkTrailer();
+
     }
 }
 

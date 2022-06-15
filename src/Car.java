@@ -9,9 +9,10 @@ public class Car extends Vehicle {
     }
 
     @Override
-    public void check(Vehicle vehicle) {
-        super.check(this);
+    public void check() {
+        super.check();
         this.checkEngine();
+
     }
 }
 
