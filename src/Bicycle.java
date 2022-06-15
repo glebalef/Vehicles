@@ -3,9 +3,11 @@ public class Bicycle extends Vehicle {
         super(modelName, wheelsCount);
     }
 
-    @Override
-    public void checkEngine() {
-    }
-    public void checkTrailer() {
-    }
-}
+ @Override
+ public void check (Vehicle vehicle) {
+     super.check(this);
+     }
+ }
+
+
+

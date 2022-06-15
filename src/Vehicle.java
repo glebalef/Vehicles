@@ -1,4 +1,4 @@
-abstract public class Vehicle implements Trailered,Engined {
+abstract public class Vehicle implements Service {
     private String modelName;
     private int wheelsCount;
 
@@ -24,7 +24,12 @@ abstract public class Vehicle implements Trailered,Engined {
     }
 
     public void updateTyre() {
-        System.out.println("Меняем покрышку");
+        System.out.println("Меняем колесо");
     }
-
+    public void check (Vehicle vehicle) {
+            System.out.println("Обслуживаем " + this.getModelName());
+            for (int i = 0; i < this.getWheelsCount(); i++) {
+                this.updateTyre();
+            }
+        }
     }

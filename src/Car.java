@@ -1,4 +1,4 @@
-public class Car extends Vehicle implements Engined {
+public class Car extends Vehicle {
 
     public Car(String modelName, int wheelsCount) {
         super(modelName, wheelsCount);
@@ -7,8 +7,13 @@ public class Car extends Vehicle implements Engined {
     public void checkEngine() {
         System.out.println("проверяем двигатель");
     }
-    public void checkTrailer() {
 
+    @Override
+    public void check(Vehicle vehicle) {
+        super.check(this);
+        this.checkEngine();
     }
 }
+
+
 
